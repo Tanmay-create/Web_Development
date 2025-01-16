@@ -1,0 +1,91 @@
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Centering body content */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d9e4e9; /* Soft background color */
+  font-family: Arial, sans-serif;
+}
+
+/* Main container styling */
+.container {
+  text-align: center;
+}
+
+/* Title styling */
+h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  color: #333;
+  text-shadow: 1px 1px 2px #aaa; /* Subtle shadow for a 3D effect */
+}
+
+/* Game board styling as a grid with 3D effects */
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(7, 60px); /* 7 columns for Connect Four */
+  grid-gap: 5px; /* Space between cells */
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #333; /* Dark background for contrast */
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Outer shadow for a 3D board look */
+}
+
+/* Style each cell as a circle with 3D effects */
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: #eee; /* Base color for empty cells */
+  border-radius: 50%; /* Makes the cell circular */
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), /* Inner shadow for depth */
+              2px 2px 4px rgba(0, 0, 0, 0.2); /* Outer shadow for 3D effect */
+  transition: background-color 0.3s; /* Smooth color transition */
+}
+
+/* Red piece for Player 1 with 3D shading */
+.cell.player1 {
+  background: radial-gradient(circle at 30% 30%, #ff4d4d, #b30000); /* Gradient for 3D effect */
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.3); /* Deeper inner shadow */
+}
+
+/* Blue piece for Player 2 with 3D shading */
+.cell.player2 {
+  background: radial-gradient(circle at 30% 30%, #4d79ff, #0033cc); /* Gradient for 3D effect */
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.3); /* Deeper inner shadow */
+}
+
+/* Styling the reset button */
+#reset-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px;
+  background-color: #4d79ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Button shadow for 3D effect */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#reset-button:hover {
+  background-color: #365dbf;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Game status text styling */
+#game-status {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow for better visibility */
+}
