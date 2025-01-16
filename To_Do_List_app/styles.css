@@ -1,0 +1,106 @@
+/* Styling for the input section */
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Input styling */
+#todo-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Task list styling */
+#todo-list {
+    list-style: none;
+}
+
+/* Individual task item styling */
+.task-item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Checkbox styling */
+.task-checkbox {
+    cursor: pointer;
+}
+
+/* Styling for completed tasks */
+.task-item.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Delete button styling */
+.delete-btn {
+    color: red;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body style to center the app */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f5;
+}
+
+/* Main container styling */
+.todo-container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Icon next to the heading */
+.heading-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
